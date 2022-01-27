@@ -16,11 +16,14 @@ protected:
 public:
     Graph (int);
     Graph(ArrSeq<ArrSeq<EdgeType>>);
-    void AddVerticle();
     void AddEdge (int, int, EdgeType);
     EdgeType GetWeight (int, int);
     bool Linked (int, int);
+    int Component ();
     ArrSeq<EdgeType> Dijsktra (int);
+    ArrSeq<int> BestWay (int, int);
+    int GetVertexes ();
+    void Print();
 };
 
 
